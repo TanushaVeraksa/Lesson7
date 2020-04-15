@@ -655,3 +655,10 @@ footer {
     display: flex;
     justify-content: center;
 }
+
+@media screen and (max-width: 750px) {
+    .icons {
+        width: 50%;
+        justify-content: space-around;
+    }
+}
