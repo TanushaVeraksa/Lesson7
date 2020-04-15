@@ -1,11 +1,17 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     padding: 0;
     font-family: 'Open Sans', sans-serif;
 }
+
 *{
     box-sizing: border-box;
 }
+
 .header-page {
     background-color:#F6F2F2;
     width: 100%;
@@ -19,6 +25,8 @@ body {
     width: 90%;
     display: flex;
     justify-content: center;
+    position: fixed;
+    top: 0;
 }
 
 nav {
@@ -56,6 +64,7 @@ header {
     justify-content: space-between;
     flex-wrap: wrap;
     margin: 5% 0;
+    margin-top: 10%;
 }
 
 .header__info {
@@ -420,17 +429,229 @@ header {
 .search-page {
     width: 100%;
     background-color: #F5F0DD;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .search {
     width: 90%;
     display: flex;
     justify-content: center;
+    align-items: center;
     color: #FFFFFF;
+    flex-direction: column;
+    padding: 5% 0;
 }
 
+.search h2 {
+    font-size: calc(20px + 0.8vw);
+    opacity: 0.8;
+    font-weight: bold;
+    margin: 1em 0 0 0;
+}
 
+.search h6 {
+    font-size: calc(11px + 0.5vw);
+    opacity: 0.8;
+    font-weight: lighter;
+    margin: 1.5em 0;
+}
 
+.search-form {
+    display: flex;
+    width: 35%;
+    justify-content: space-around;
+}
 
+.search-form input{
+    color: #2C2C2C;
+    opacity: 0.7019607843137254;
+    font-size: calc(7.5px + 0.5vw);
+    padding: 1em 3.5em 1em 1em;
+    text-transform: capitalize;
+    border-radius: 5px;
+    border: 1px solid #FFFFFF;
+}
 
+.search-form button {
+   background-color:  #FF2D2D;
+   text-transform: uppercase;
+   color: #FFFFFF;
+   font-size: calc(7.5px + 0.5vw);
+   padding: 1em 1.5em;
+   border-radius: 5px;
+   border: 1px solid #FF2D2D;
+   font-weight: 500;
+}
 
+.contact-page {
+    background-color: #FFFFFF;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column ;
+    color:#000000;
+    position: relative;
+}
+
+.contact__section {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact__info {
+    width: 40%;
+}
+
+.contact__info h2{
+    text-transform: uppercase;
+    font-size: calc(19px + 1vw);
+    opacity: 0.8;
+}
+
+.contact__info h6 {
+    font-size: calc(12px + 0.5vw);
+    font-weight: lighter;
+    opacity: 0.7019607843137254;
+}
+
+@media screen and (max-width: 750px) {
+    .contact__info {
+        width: 100%;
+    }
+}
+
+.contact-page {
+    display: flex;
+}
+
+.contact__form {
+    opacity: 0.7019607843137254;
+    color: #000000;
+    width: calc(50vw + 1em);
+    display: flex;
+    flex-direction: column;
+}
+
+.contact__form-yourself {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact__form input {
+    font-size: calc(11px + 0.5vw);
+    width: 100%;
+    padding: 1em 0 6em 1.5em;
+    background-color: #E5E5E5;
+    border: none;
+    border-radius: 5px;
+}
+
+.contact__form-yourself input{
+    width: 45%;
+    font-size: calc(11px + 0.5vw);
+    padding: 1em 0 1em 1.5em;
+    background-color: #E5E5E5;
+    text-transform: capitalize;
+    border: none;
+    border-radius: 5px;
+}
+
+.contact__form button {
+    background-color: #FF3B3B;
+    border: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-size: calc(13px + 0.5vw);
+    color: #FFFFFF;
+    font-weight: bold;
+    padding: 1em 0;
+    margin-top: 5%;
+}
+
+.type-text {
+    margin-top: 5%;
+}
+
+.form {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.form__container {
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact-page__contact-info {
+    width: calc(35vw + 1em);
+    background-color: #2D2D2D;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #FFFFFF;
+    opacity: 0.8;
+    padding-left: 5%;
+    margin-left: 5%;
+}
+
+.contact-page__contact-info h5{
+    font-size: calc(10px + 0.2vw);
+    text-transform: uppercase;
+    margin:0;
+    margin-bottom: 8%;
+}
+
+.contact-page__contact-info h6{
+    font-size: calc(11px + 0.2vw);
+    margin:0;
+    margin-bottom: 5%;
+}
+
+@media screen and (max-width: 750px) {
+    .contact__form {
+        width: 100%;
+        display: flex;
+        margin-right: 5%;
+    }
+    .contact-page__contact-info {
+        width: 100%;
+        margin: 0;
+        margin-right: 5%;
+        margin-top: 5%;
+    }
+}
+
+.footer-page {
+    width:90%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-page h6{
+    width:50%;
+}
+
+.icons {
+    width: 15%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer {
+    width: 100%;
+    background-color: #313030;
+    margin-top: 10%;
+    font-size: calc(12px + 0.5vw);
+    color: #B8B8B8;
+    display: flex;
+    justify-content: center;
+}

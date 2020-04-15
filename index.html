@@ -8,13 +8,13 @@
     <title>Agnecy Landing</title>
 </head>
 <body>
-    <div class="header-page">
+    <div class="header-page" id="home">
         <div class="navigation">
             <nav>
-                <div class="navigation__style"><a href="#">home</a></div>
-                <div class="navigation__style"><a href="#">portfolio</a></div>
-                <div class="navigation__style"><a href="#">about us</a></div>
-                <div class="navigation__style"><a href="#">contact</a></div>
+                <div class="navigation__style"><a href="#home">home</a></div>
+                <div class="navigation__style"><a href="#portfolio">portfolio</a></div>
+                <div class="navigation__style"><a href="#about_us">about us</a></div>
+                <div class="navigation__style"><a href="#contact">contact</a></div>
             </nav>
         </div>
 
@@ -29,7 +29,8 @@
                     <div class="traingle-right"></div>
                 </div>
             </div>
-        </header> 
+        </header>
+        <div id="about_us"></div>
     </div>
 
     <div class="main-page">
@@ -67,8 +68,8 @@
         <section class="portfolio">
             <div class="portfolio__header">
                 <h2>feature products</h2>
-                <h4>Lorem ipsum dolor sit amet, consectetur adipis cing elit,sed do eiusmod tempor incididunt ut labore et.</h4>
-                <div class="line-style"></div>
+                <h4 >Lorem ipsum dolor sit amet, consectetur adipis cing elit,sed do eiusmod tempor incididunt ut labore et.</h4>
+                <div class="line-style" id="portfolio"></div>
             </div>
             <div class="portfolio__list">
                 <h4><span>all</span></h4>
@@ -123,10 +124,53 @@
             <h2>Design tips, tricks, and freebies. Delivered weekly.</h2>
             <h6>Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed d</h6>
             <div class="search-form">
-                <input type="email">
+                <input type="email" value="email address...">
                 <button>subscribe</button>
             </div>
         </section>
     </div>
+
+    <div class="contact-page" id="contact">
+        <section class="contact__section">
+            <div class="contact__info">
+                <h2>get in touch</h2>
+                <h6>Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed do eiusmod tempor incididunt ut labore et.ur adipis cing elit, sed do eiusmod tempor incididunt ut labore et. ur adipis cing elit, sed do eiusmod tempor incididunt ut labore et.</h6>
+                <div class="line-style"></div>
+            </div>
+        </section>
+        <div class="form">
+            <div class="form__container">
+                <div class="contact__form">
+                    <div class="contact__form-yourself">
+                        <input type="name" value="name">
+                        <input type="email" value="your mail">
+                    </div>
+                    <input class="type-text" type="text" value="Type your message">
+                    <button>send message</button>
+                </div>
+                <div class="contact-page__contact-info">
+                    <h5>contact info</h5>
+                    <h6>Jalalabad 24 / A, Ambaarkhana, Sylhet, <br> Bangladesh</h6>
+                    <h6>redwan@deviserweb.com</h6>
+                    <h6>(+88) 017 617 46373</h6>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-page">
+             <h6>&#169; Copyright &#64;Junaed 2016, All rights reserved.</h6>
+             <div class="icons">
+                 <img src="img/twitter.png" alt="">
+                 <img src="img/instagram.png" alt="">
+                 <img src="img/google.png" alt="">
+                 <img src="img/facebook.png" alt="">
+             </div>
+        </div>
+    </footer>
 </body>
 </html>
+
+
+
